@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="she384-EVST">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="she384-"></script>
+</head>
+<body>
+     <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+        <li class="nav-item dropdown">
+
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                 <li><hr class="dropdown-divider"></li>
+                 <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+        </li>
+      </ul>
+     </nav>
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0"></div>
+<h4 id="scrollspyHeading1">First Heading</h4> 
+<p>Lorem ipsum dolor sit amet consectetur</p>
+<h4 id="scrollspyHeading2">Second Heading</h4> 
+<p>Lorem, ipsum</p>
+<h4 id="scrollspyHeading3">Third Heading</h4> 
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+<h4 id="scrollspyHeading4">Fourth Heading</h4> 
+<p>Lorem</p>
+<h4 id="scrollspyHeading5">Fifth Heading</h4> 
+<p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+    <div class="container">
+     <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="BexmapleModal">
+                Lauch demo model
+            </button>
+
+        <!-- Model -->
+        <div class="model fade" id="exampleModel" tabindex="-1" aria-labelledby="exampleModelLabel" aria-hidden="true">
+        <div class="model-dialog">
+            <div class="model-content">
+              <div class="model-header">
+                <h5 class="model-title" id="exampleModelLabel">Model title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+                    <div class="model-body">
+                        ...    
+                    </div>
+               <div class="model-footer">
+                <button type="button" class="btn btn-secondary" data-bs dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button> 
+               </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+     </div>
+    </div>
+</body>
+</html>
